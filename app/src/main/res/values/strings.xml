@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Habit Tracker</string>
+
+    <!-- Title for the activity to add a new habit [CHAR LIMIT=20] -->
+    <string name="add_new_habit_activity_title">Add a Habit</string>
+
+    <!-- Label for main menu option to add a habit [CHAR LIMIT=20] -->
+    <string name="add_a_habit">Add habit</string>
+
+    <!-- Label for editor menu option to save habit [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current habit [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Text hint for name field [CHAR LIMIT=30] -->
+    <string name="habit_name">Habit</string>
+
+    <!-- Text hint for breed field in the editor [CHAR LIMIT=30] -->
+    <string name="habit_frequency">Frequency</string>
+</resources>
