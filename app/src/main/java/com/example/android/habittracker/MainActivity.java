@@ -31,12 +31,7 @@ public class MainActivity extends AppCompatActivity {
         displayDatabaseInfo();
     }
 
-    /**
-     * Temporary helper method to display information in the onscreen TextView about the state of
-     * the habits database.
-     */
-    private void displayDatabaseInfo() {
-
+    private Cursor createCursor(){
         // Create and/or open a database to read from it
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
@@ -54,6 +49,17 @@ public class MainActivity extends AppCompatActivity {
                 null,
                 null,
                 null);
+
+        return cursor;
+    }
+
+    /**
+     * Temporary helper method to display information in the onscreen TextView about the state of
+     * the habits database.
+     */
+    private void displayDatabaseInfo() {
+
+        Cursor cursor = createCursor();
 
         TextView displayView = (TextView) findViewById(R.id.text_view_habit);
 
